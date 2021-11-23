@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link href='lib/main.css' rel='stylesheet' />
+    <script src='lib/main.js'></script>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.css' rel='stylesheet' />
+    <link href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.css' rel='stylesheet'>
+    <link rel="stylesheet" href="rooster.css">
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+      
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          themeSystem: 'bootstrap',
+          initialView: 'dayGridWeek',
+          googleCalendarApiKey: 'AIzaSyBvjXwHIq0ifuvw7X4rEn8M4VnNzeuQCXw',
+          events: {
+            googleCalendarId: '3t2es6ikkug55itthfthiujjic@group.calendar.google.com',
+          }        
+        });
+      
+        calendar.render();
+        console.log("3t2es6ikkug55itthfthiujjic@group.calendar.google.com")
+      });
+      </script>
+  </head>
+  <body>
+    <div id="movienight-main">
+      <!-- Header -->
+      <header>
+          <div class="container">
+              <nav>
+                  <div class="logo">
+                      <a href="#"><img src="img/Favicon.png" alt="logo"></a>
+                  </div>
+                  <!-- toggle bar -->
+                  <div class="toggle-bar" type="button">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+                  <div class="navigation-bar">
+                      <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="team.html">Het team</a></li>
+                          <li><a href="#">Minecraft</a></li>
+                          <li><a href="rooster.html">Het rooster</a></li>
+                          <li><a href="#">Contact</a></li>
+                          <li class="discord-btn"><a href="discord.gg/MPyXq5evDX">Discord</a></li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </header>
+    </div>
+    <div id='calendar'></div>
+  </body>
+</html>
+
+<script>
+  $('.toggle-bar').on('click', function (event) {
+      $('this').toggleClass('open');
+      $('.navigation-bar').slideToggle('200');
+  })
+</script>
+
+<!-- Site footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>Over ons</h6>
+        <p class="text-justify">In deze server kun je gezellig en natuurlijk op een vriendelijke manier met andere leden van deze server callen & chatten!
+          Aangezien wij er als server voor willen zorgen dat iedereen zich veilig en goed voelt in de server hebben wij regels opgemaakt die je hier kunt vinden.
+          Wat is er nou zo bijzonder aan deze server?
+          Wel… Zoals de naam van de server het zelf al zegt spelen wij hier films af!
+          Wees aardig voor elkaar en we wensen jullie een fijne tijd in deze server!</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Snel navigeren</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Het team</a></li>
+          <li><a href="#">Minecraft</a></li>
+          <li><a href="rooster.html">Het rooster</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+     <a href="#">Movie Night</a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li> 
+          <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li> 
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+

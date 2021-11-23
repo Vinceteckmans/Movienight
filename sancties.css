@@ -1,0 +1,123 @@
+@import "compass/reset";
+
+:root { @include flexType(2, 13, 18) }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+h1, h2, h3, strong { 
+    font-weight: bold; 
+    margin: 0;
+}
+
+h1 { 
+    font-size: 1.2em;
+    line-height: 1; 
+    margin-bottom: 0.5em;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    
+    @include bp(600, max-width) {
+        font-size: 1.5em;
+        margin-bottom: .9em;
+        
+    }
+}
+
+h2 {
+    font-size: 1em;
+    line-height: 1.333333333; 
+    margin-bottom: 0.666666666em;
+    
+    @include bp(600, max-width) {
+        font-size: 1.3125em;
+        line-height: 1.142857142;
+        margin-bottom: 1.142857142em;
+        
+    }
+}
+
+h3 {
+    font-size: 0.5em;
+    line-height: 1;
+    margin-bottom: .9em;
+    
+    @include bp(600, max-width) {
+        font-size: 1.125em;
+        line-height: 1.333333333;
+        margin-bottom: 1.333333333em;
+        
+    }
+}
+
+p { 
+    font-size: 0.8em;
+    margin-bottom: 1.5em;
+    
+    @include bp(600, max-width) {
+        font-size: 1em;
+        line-height: 1.5em; 
+        margin-bottom: 1.45em;
+        
+    }
+}
+
+.admin{
+    color: #ff2b14;
+}
+
+.senior{
+    color: #f1523b;
+}
+
+.moderator{
+    color: #f86a50;
+}
+
+.junior{
+    color: #ec7c6c;
+}
+
+.helper{
+    color: #ec9e8f;
+}
+
+.technisch{
+    color: #cd5c5e;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+    background-color: rgb(27, 27, 27);
+  }
+   
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #29aafe;
+    border-radius: 15px;
+  }
+
+
+.links{
+    max-width: 50%;
+}
+
+.rechts{
+    max-width: 40%;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.sancties{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}

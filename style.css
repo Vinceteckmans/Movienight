@@ -1,0 +1,224 @@
+/*--/header --*/
+
+header.banner_section {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+button.btn.login-btn {
+    padding: 8px 24px;
+    background: #037ef3;
+    color: #fff;
+    border: none;
+    font-size: 0.9em;
+    font-family: inherit;
+    letter-spacing: 1px;
+}
+
+button.btn.login-btn:hover {
+    background: #fff;
+    color: #037ef3;
+}
+
+/*** Navigation Styles ***/
+
+nav.main-header {
+    width: 100%;
+    height: 100px;
+    background: #2273f8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+nav.main-header.navShadow {
+    -webkit-box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+    height: 80px;
+    background: #000;
+}
+
+nav.navShadow #word-mark {
+    opacity: 0;
+}
+
+#brand h1 a{
+    color: white;
+    text-decoration: none;
+}
+
+#brand,
+#menu,
+ul.nav-honey {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#brand {
+    padding-left: 40px;
+    float: left;
+    width: 20%;
+}
+
+#logo img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+#word-mark {
+    width: 120px;
+    border-radius: 90px;
+    margin-left: 8px;
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#logo a i {
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    line-height: 1.7;
+    color: #fff;
+    font-family: inherit;
+}
+
+div#word-mark h1 a {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 0;
+    letter-spacing: 1px;
+    font-family: inherit;
+}
+
+/*** Menu Styles ***/
+
+#menu {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 40px;
+    float: right;
+    width: 80%;
+}
+
+.nav-honey li {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.nav-honey li a {
+    background: none;
+    display: block;
+    color: #fff;
+    font-size: 0.9em;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.5em;
+}
+
+#menu-toggle {
+    width: 55px;
+    height: 55px;
+    background: #037ef3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-toggle:hover .bar {
+    width: 25px;
+}
+
+#menu-toggle.closeMenu .bar {
+    width: 25px;
+}
+
+#menu-toggle.closeMenu .bar:first-child {
+    -webkit-transform: translateY(7px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
+}
+
+#menu-toggle.closeMenu .bar:nth-child(2) {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+#menu-toggle.closeMenu .bar:last-child {
+    -webkit-transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.bar {
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.bar:nth-child(2) {
+    width: 20px;
+    margin: 5px 0;
+}
+
+.bar:last-child {
+    width: 15px;
+}
+
+.nav-honey li a.active {
+    color: #ffffff;
+}
+
+/*-- to-top --*/
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-indent: 100%;
+    background: #037ef3 url(./img/move_up.png) no-repeat 11px 11px;
+}
+
+#toTopHover {
+    width: 40px;
+    height: 40px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
